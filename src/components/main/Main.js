@@ -161,7 +161,7 @@ const Main = () => {
             <h3 class="contact__subtitle">PHONE</h3>
             <span class="contact__text">+91-00000000000</span>
 
-            <h3 class="contact__subtitle">ADRESS</h3>
+            <h3 class="contact__subtitle">ADDRESS</h3>
             <span class="contact__text"> India</span>
           </div>
 
