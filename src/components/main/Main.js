@@ -47,13 +47,13 @@ const Main = () => {
             </p>
 
             <div class="about__social">
-              <a href="#" class="about__social-icon">
+              <a href="#icons" class="about__social-icon">
                 <i class="bx bxl-linkedin"></i>
               </a>
-              <a href="#" class="about__social-icon">
+              <a href="icons" class="about__social-icon">
                 <i class="bx bxl-github"></i>
               </a>
-              <a href="#" class="about__social-icon">
+              <a href="icons" class="about__social-icon">
                 <i class="bx bxl-dribbble"></i>
               </a>
             </div>
@@ -96,7 +96,7 @@ const Main = () => {
             <img src={work1} alt="work1" />
 
             <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">
+              <a href="#icons" class="portfolio__link-name">
                 View details
               </a>
             </div>
@@ -105,7 +105,7 @@ const Main = () => {
             <img src={work2} alt="work2" />
 
             <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">
+              <a href="#icons" class="portfolio__link-name">
                 View details
               </a>
             </div>
@@ -114,7 +114,7 @@ const Main = () => {
             <img src={work3} alt="work3" />
 
             <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">
+              <a href="#icons" class="portfolio__link-name">
                 View details
               </a>
             </div>
@@ -123,7 +123,7 @@ const Main = () => {
             <img src={work4} alt="work4" />
 
             <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">
+              <a href="#icons" class="portfolio__link-name">
                 View details
               </a>
             </div>
@@ -132,7 +132,7 @@ const Main = () => {
             <img src={work5} alt="work5" />
 
             <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">
+              <a href="#icons" class="portfolio__link-name">
                 View details
               </a>
             </div>
@@ -141,7 +141,7 @@ const Main = () => {
             <img src={work6} alt="work6" />
 
             <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">
+              <a href="#icons" class="portfolio__link-name">
                 View details
               </a>
             </div>

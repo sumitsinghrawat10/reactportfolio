@@ -46,13 +46,13 @@ const Footer = () => {
 
         <div class="footer__data">
           <h2 class="footer__title">FOLLOW</h2>
-          <a href="#" class="footer__social">
+          <a href="#facebook" class="footer__social">
             <i class="bx bxl-facebook"></i>
           </a>
-          <a href="#" class="footer__social">
+          <a href="#social" class="footer__social">
             <i class="bx bxl-instagram"></i>
           </a>
-          <a href="#" class="footer__social">
+          <a href="#social" class="footer__social">
             <i class="bx bxl-twitter"></i>
           </a>
         </div>

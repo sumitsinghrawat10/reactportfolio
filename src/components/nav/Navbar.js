@@ -21,7 +21,7 @@ const Navbar = () => {
       <header class="l-header">
         <nav class="nav bd-grid">
           <div>
-            <a href="#" class="nav__logo">
+            <a href="#logo" class="nav__logo">
               Sumit Singh
             </a>
           </div>
