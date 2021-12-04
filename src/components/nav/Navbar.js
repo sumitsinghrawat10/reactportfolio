@@ -2,13 +2,13 @@ import React from "react";
 import "./nav.css";
 import { Link } from "react-router-dom";
 
-import { Container } from "reactstrap";
-import { ThemeContext, themes } from "../../ThemeContext";
+// import { Container } from "reactstrap";
+// import { ThemeContext, themes } from "../../ThemeContext";
 
-import ToggleDark from "../../ToggleDark";
+// import ToggleDark from "../../ToggleDark";
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = React.useState(true);
+  // const [darkMode, setDarkMode] = React.useState(true);
 
   // const showMenu = (toggleId, navId) => {
   //   const toggle = document.getElementById(toggleId),

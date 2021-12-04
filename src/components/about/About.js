@@ -27,6 +27,7 @@ const About = () => {
               <a
                 href="https://www.linkedin.com/in/sumit-singh-74a028a0/"
                 class="about__social-icon"
+                rel="noreferrer"
                 target="_blank"
               >
                 <i class="bx bxl-linkedin"></i>
@@ -34,11 +35,17 @@ const About = () => {
               <a
                 href="https://github.com/sumitsinghrawat10"
                 class="about__social-icon"
+                rel="noreferrer"
                 target="_blank"
               >
                 <i class="bx bxl-github"></i>
               </a>
-              <a href="icons" class="about__social-icon" target="_blank">
+              <a
+                href="icons"
+                class="about__social-icon"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <i class="bx bxl-dribbble"></i>
               </a>
             </div>
