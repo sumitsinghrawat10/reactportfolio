@@ -1,7 +1,5 @@
 import React from "react";
 import "./nav.css";
-import Main from "../main/Main";
-import Footer from "../footer/Footer";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -72,8 +70,6 @@ const Navbar = () => {
           </div>
         </nav>
       </header>
-      <Main />
-      <Footer />
     </div>
   );
 };
