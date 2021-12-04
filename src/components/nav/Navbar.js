@@ -2,18 +2,25 @@ import React from "react";
 import "./nav.css";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
-  const showMenu = (toggleId, navId) => {
-    const toggle = document.getElementById(toggleId),
-      nav = document.getElementById(navId);
+import { Container } from "reactstrap";
+import { ThemeContext, themes } from "../../ThemeContext";
 
-    if (toggle && nav) {
-      toggle.addEventListener("click", () => {
-        nav.classList.toggle("show");
-      });
-    }
-  };
-  showMenu("nav-toggle", "nav-menu");
+import ToggleDark from "../../ToggleDark";
+
+const Navbar = () => {
+  const [darkMode, setDarkMode] = React.useState(true);
+
+  // const showMenu = (toggleId, navId) => {
+  //   const toggle = document.getElementById(toggleId),
+  //     nav = document.getElementById(navId);
+
+  //   if (toggle && nav) {
+  //     toggle.addEventListener("click", () => {
+  //       nav.classList.toggle("show");
+  //     });
+  //   }
+  // };
+  // showMenu("nav-toggle", "nav-menu");
 
   return (
     <div>
@@ -27,6 +34,19 @@ const Navbar = () => {
 
           <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
+              <li>
+                {" "}
+                {/* <ThemeContext.Consumer>
+                  {({ changeTheme }) => (
+                    <ToggleDark
+                      toggleDark={() => {
+                        setDarkMode(!darkMode);
+                        changeTheme(darkMode ? themes.light : themes.dark);
+                      }}
+                    />
+                  )}
+                </ThemeContext.Consumer> */}
+              </li>
               <li class="nav__item">
                 <Link to="/">
                   <a href="#home" class="nav__link active">
