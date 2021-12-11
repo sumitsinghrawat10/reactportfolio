@@ -1,14 +1,12 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
 
 import App from "./App";
-import ThemeContextWrapper from "./ThemeContextWrapper";
+import "./i18n";
 
 ReactDOM.render(
-  <ThemeContextWrapper>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </ThemeContextWrapper>,
+  <Suspense fallback={<div>Loading</div>}>
+    <App />
+  </Suspense>,
   document.getElementById("root")
 );

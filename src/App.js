@@ -8,12 +8,20 @@ import About from "./components/about/About";
 import Skills from "./components/skills/Skils";
 import Footer from "./components/footer/Footer";
 import Main from "./components/main/Main";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const App = () => {
+  const { t } = useTranslation();
+
+  function handleClick(lang) {
+    i18next.changeLanguage(lang);
+  }
   return (
     <Router>
       <div>
         <Navbar />
+
         <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/about" component={About} />

@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
+
 import "./contact.css";
 
 const Contact = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_3xrwp06",
+        form.current,
+        "user_HG3tG7eEKLbu3xYMicXXx"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   };
   return (
     <div>
@@ -22,10 +41,20 @@ const Contact = () => {
             <span class="contact__text"> India</span>
           </div>
 
-          <form action="" class="contact__form">
+          <form action="" class="contact__form" onSubmit={sendEmail}>
             <div class="contact__inputs">
-              <input type="text" placeholder="Name" class="contact__input" />
-              <input type="mail" placeholder="Email" class="contact__input" />
+              <input
+                type="text"
+                placeholder="Name"
+                class="contact__input"
+                name="name"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="contact__input"
+                name="email"
+              />
             </div>
 
             <textarea
@@ -36,12 +65,7 @@ const Contact = () => {
               class="contact__input"
             ></textarea>
 
-            <input
-              type="submit"
-              value="Submit"
-              class="contact__button"
-              onClick={handleSubmit}
-            />
+            <input type="submit" value="Submit" class="contact__button" />
           </form>
         </div>
       </section>
